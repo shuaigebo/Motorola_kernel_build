@@ -36,6 +36,7 @@ jobs:
           cd kernel-source
           curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-main
           cd KernelSU
+          git reset --hard f9477fc3869feddca1c12170689f40bc39c3ca52
           cd ../..
 
       - name: Build kernel
